@@ -8,6 +8,6 @@ const app = express();
 
 
 app.use('/api', apiRouter);
-app.use('/html', htmlRouter);
+app.use('/', htmlRouter);
 
 module.exports = app;
