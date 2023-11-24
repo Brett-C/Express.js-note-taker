@@ -9,6 +9,6 @@ app.use(express.json());
 app.use(express.urlencoded({extended:false}));
 app.use(index_route);
 
-app.listen(PORT, () =>{
+app.listen(process.env.PORT, () =>{
     console.log(`Server started on http://localhost:${PORT}`)
 })
